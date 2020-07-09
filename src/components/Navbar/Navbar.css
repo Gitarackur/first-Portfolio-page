@@ -1,0 +1,181 @@
+
+/* NAV MENU */
+
+
+.effexts{
+    background-color:  rgba(0, 0, 0, 1);
+    width: 100%;
+    transition: 0.8s all linear;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-text{
+    color: white;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toggler-icon{
+    display: none;
+}
+
+
+.menu{
+    display: flex;
+}
+
+
+.menu a{
+    text-decoration: none !important;
+    padding: 0.5%;
+    position: relative;
+    padding: 15px 10px;
+    color: #fff;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #35e888;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0.1s;
+
+    transform-origin: left;
+    transform-origin: right;
+    /*center is the default*/
+    transform-origin: center;
+    }
+
+    .menu a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    }
+
+
+    .menu a.active{
+        color: #4ceb95;
+    }
+
+
+
+    
+
+/* NAV MENU MOBILE*/
+
+@media only screen and (max-width: 768px) {
+    .toggler-icon{
+        background-color: black;
+        color: white;
+        border: 2px solid #35e888;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        position: absolute;
+        top: 17px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    .toggler-icon.toggler-icon-rotate{
+        transform: rotate(-47deg);
+        border-radius: 100%;
+        position: fixed;
+        overflow: hidden;
+    }
+
+    
+    .toggler-icon span{
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        border-radius: 10px;
+        display: block;
+    }
+    
+    .rotate-1st{
+        transform: translate(0%, 29%);
+    }
+    
+    .rotate-2nd{
+        transform: rotate(90deg);
+        position: relative;
+        top: -1.5px;
+    }
+
+
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: #35e888;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.95;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        transition: 0.3s all ease-in;
+        z-index: 100;
+    }
+
+
+
+    .menu.showDropdown{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: 0.3s all ease-in;
+        
+    }
+
+    
+
+    
+    .menu a{
+        color: #aaaaaa;
+        text-decoration: none;
+        padding: 10px 10px;
+    }
+
+}
+
+
+/* NAV MENU DESKTOP*/
+
+@media only screen and (min-width: 768px) {
+    .menu{
+        justify-content: space-evenly;
+    }
+
+        
+    .menu a{
+        color: #aaaaaa;
+        text-decoration: none;
+        padding: 20px 10px;
+    }
+            
+  
+    
+}
+

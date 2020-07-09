@@ -1,0 +1,64 @@
+/* .App {
+  text-align: center;
+} */
+
+body{
+    background-color: #040404;
+    color: white;
+    /* font-family: Montserrat, sans-serif; */
+    font-family: Poppins, sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+  }
+  
+  
+  @media only screen and (max-width: 260px) {
+    body{
+        font-size: 0.7rem;
+    }
+    h1{
+      font-size: 0.9rem;
+    }
+  
+    i{
+      font-size: 0.5rem !important;
+    }
+  
+  }
+  
+  
+  .heading-text{
+    color: #35e888 !important;
+  }
+  
+  
+  .social-links a{
+    text-decoration: none;
+  }
+  
+  .social-links a i{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 1%;
+    color: white !important;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .social-links a i{
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        padding: 2%;
+        color: white !important;
+        font-size: 1.7rem;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
+  
+  .social-links a i:hover{
+    /* background-color: #35e888; */
+    color: #35e888 !important;
+  }

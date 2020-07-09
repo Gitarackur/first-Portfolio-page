@@ -1,0 +1,85 @@
+
+
+
+
+
+
+/*ABOUT ME */
+
+@media only screen and (max-width: 350px) {
+    .about{
+        margin-top: 500px;
+    }
+}
+
+.about{
+    margin-top: 30px;
+}
+
+.About-me-txt{
+    text-transform: uppercase;
+    position: relative;
+    color: #aaaaaa;
+}
+
+.About-me-txt::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4ceb95;
+    margin: 5px 10px;
+}
+
+
+/* 
+@media only screen and (min-width: 768px) {
+    .mee-img{
+        width: 100%;
+        height: 600px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .mee-img{
+        width: 100%;
+        height: 700px;
+    }
+     
+} */
+
+
+
+.info{
+    list-style-type: none !important;
+}
+
+.info li i{
+    color: #35e888;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+.content{
+    margin-top: 0px; 
+    border-left: 1px solid #35e888;
+    position: relative;
+}
+
+
+.content::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #18d26e;
+  border: 2px solid #18d26e;
+}

@@ -1,0 +1,7 @@
+
+/* MAIN LANDING PAGE WITH WINDOW VIEWPORT HEIGHT*/
+.main{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+

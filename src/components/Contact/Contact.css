@@ -1,0 +1,81 @@
+ 
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.h2-text{
+    font-size: 14px;
+}
+
+.contact-us-text{
+    text-transform: uppercase;
+    position: relative;
+    color: #aaaaaa;
+}
+
+.contact-us-text::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4ceb95;
+    margin: 5px 10px;
+}
+
+.contact .info-box {
+    color: #444444;
+    padding: 20px;
+    width: 100%;
+    /* background: #040404; */
+  }
+  
+  .contact .info-box i.bx {
+    font-size: 24px;
+    color: #18d26e;
+    border-radius: 50%;
+    padding: 14px;
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .contact .info-box h3 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+  }
+  
+  .contact .info-box p {
+    padding: 0;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+  }
+  
+  .contact .info-box .social-links {
+    
+  }
+  
+   
+  .contact .info-box .social-links a {
+    padding: 1%;
+    margin: 0.5%;
+  }
+  
+
+.contact .container .row .col-md-6 .info-box .social-links a i{
+    padding: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .container .row .col-md-6 .info-box .social-links a i{
+    padding: 2%;
+    }
+}
+
+  
+.contact .container .row .col-md-6 .info-box .social-links a i:hover {
+  color: #18d26e;
+}
+
