@@ -78,4 +78,7 @@
   .hearts{
       color: #35e888 !important;
       animation: Animate infinite;
-  }
+  }.copy{
+	  text-align : center;
+	  color : white;
+}
