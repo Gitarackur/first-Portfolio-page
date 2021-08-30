@@ -48,6 +48,7 @@ const Footer = () => {
                 </div> */}
                 
             </div>
+<p className=copy>	&#169; 2021</p>
         </div>
     )
 }
